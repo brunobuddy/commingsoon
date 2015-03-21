@@ -26,7 +26,7 @@ $m = new Mustache_Engine(array(
 ));
 
 
-// loads template from `views/hello_world.mustache` and renders it.
+// loads template and renders it
 echo $m->render('home', $data);
 
 ?>
