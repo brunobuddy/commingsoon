@@ -5,21 +5,22 @@
 
 	<!-- JS -->
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
 
 	<!-- Twitter Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 
 </head>
 
 
-<body>
+<body style="background-image:url({{ background }});">
 	<div class="container-fluid">
 
 		<div class="row text-center">
 			<div class="col-xs-8 col-xs-offset-2">
-				<img src="http://fakeimg.pl/350x200/?text=Logo">
-				<h1>Baseline</h1>				
+				<img src="{{ logo }}">
+				<h1>{{ baseline }}</h1>				
 			</div>
 
 		</div>
@@ -29,11 +30,12 @@
 				<form class="form-inline">
 					<div class="form-group">
 						<label class="sr-only" for="exampleInputEmail3">Email address</label>
-						<input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
+						<input type="email" class="form-control" id="exampleInputEmail3" placeholder="{{ placeholder }}">
 					</div>
-					<button type="submit" class="btn btn-default">Sign in</button>
+					<button type="submit" class="btn btn-default">{{ button_value }}</button>
 				</form>
-				<p>Help Label text info</p>	
+				<p>{{ help_label }}</p>	
+				<p>{{ placeholder }}</p>
 			</div>
 		</div>
 
