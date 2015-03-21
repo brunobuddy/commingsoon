@@ -1,8 +1,8 @@
-
-<?php 
+﻿
+<?php	
 
 // Composer Autoload
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 try
 {
@@ -24,8 +24,7 @@ $m = new Mustache_Engine(array(
     'loader' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/views'),
 ));
 
-
 // loads template and renders it
-echo $m->render('home', $data);
+echo $m->render('edit', $data);
 
 ?>
