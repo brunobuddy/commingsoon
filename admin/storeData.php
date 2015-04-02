@@ -1,5 +1,6 @@
 <?php
-echo "ookoko";
+
+echo $_POST["baseline"];
 
 try
 {
@@ -11,9 +12,7 @@ catch(Exception $e)
         die('Erreur : '.$e->getMessage());
 }
 
-$query = "UPDATE page SET background='" . 
-$reponse = $db->query("UPDATE page SET background='new-image3'");
+$db->exec("UPDATE page SET background='test'");
 
-$reponse->closeCursor(); // Termine le traitement de la requête
 
 ?>

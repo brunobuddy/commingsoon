@@ -10,7 +10,7 @@
 
 	<!-- Twitter Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 
 </head>
 
@@ -26,7 +26,7 @@
 			  	<div class="form-group">
 			  		<div class="col-xs-6">
 				    	<label for="logo">Logo image</label>
-				    	<input type="file" id="logo">			  			
+				    	<input type="file" id="logo" name="logo">			  			
 			  		</div>
 					<div class="col-xs-6">
 						<p class="help-block">Logo actuel :</p>
@@ -37,7 +37,7 @@
 			  	<div class="form-group">
 			  		<div class="col-xs-6">
 				    	<label for="background">Background image</label>
-				    	<input type="file" id="background">			  			
+				    	<input type="file" id="background" name="background">			  			
 			  		</div>
 					<div class="col-xs-6">
 				    	<p class="help-block">Background actuel</p>
@@ -47,33 +47,33 @@
 
 			 	<div class="form-group">{{ baseline }}
 			  		<label for="baseline">Baseline</label>
-			  		<textarea class="form-control" rows="3" id="baseline">{{ baseline }}</textarea>
+			  		<textarea class="form-control" rows="3" id="baseline" name="baseline">{{ baseline }}</textarea>
 			 	</div>
 
 			  	<div class="form-group">
 			  		<label for="placeholder">Placeholder</label>
-			  		<input type="text" class="form-control" value="{{ placeholder }}" id="placeholder">
+			  		<input type="text" class="form-control" value="{{ placeholder }}" id="placeholder" name="placeholder">
 			  	</div>
 
 			  	<div class="form-group">
 			  		<label for="placeholder">Button Value</label>
-			  		<input type="text" class="form-control" value="{{ button_value }}"  id="button-value">
+			  		<input type="text" class="form-control" value="{{ button_value }}"  id="button-value" name="button-value">
 			  	</div>
 
 			  	<div class="form-group">
 			    	<label for="email">Email address</label>
-			    	<input type="email" class="form-control" id="email" value="{{ mail_box }}">
+			    	<input type="email" class="form-control" id="email" value="{{ mail_box }}" name="email">
 			    	<p class="help-block">Entrez la boîte mail qui recevera les inscritpions</p>
 			  	</div>
 
 			  	<div class="form-group">
 			  		<label for="help-label">Help Label</label>
-			  		<input type="text" class="form-control" value="{{ help_label }}" id="help-label">
+			  		<input type="text" class="form-control" value="{{ help_label }}" id="help-label" name="help-label">
 			  	</div>
 
 			  	<div class="form-group">
 			  		<label for="meta-title">Meta title</label>
-			  		<input type="text" class="form-control" value="{{ meta_title }}" id="meta-title">
+			  		<input type="text" class="form-control" value="{{ meta_title }}" id="meta-title" name="meta-title">
 			  	</div>
 
 			  <div class="checkbox" id="show-link">
