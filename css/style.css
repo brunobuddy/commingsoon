@@ -1,2 +1,13 @@
+/**
+*    Main
+*
+*       #Layout and elements
+*/
+/*-----------------------------------*\
+            #Layout and elements
+\*-----------------------------------*/
 body {
   background-size: cover; }
+
+.container-fluid {
+  max-width: 1020px; }

@@ -22,62 +22,69 @@
 
 	<div class="container-fluid">
 		<div class="row">
-			<form>
+			<form method="post" action="storeData.php">
 			  	<div class="form-group">
-			    	<label for="logo">Logo image</label>
-			    	<input type="file" id="logo">
-			    	<p class="help-block">Ajouter votre logo ici</p>
+			  		<div class="col-xs-6">
+				    	<label for="logo">Logo image</label>
+				    	<input type="file" id="logo">			  			
+			  		</div>
+					<div class="col-xs-6">
+						<p class="help-block">Logo actuel :</p>
+						<img src="../{{ logo }}">
+					</div>
 			  	</div>
 
 			  	<div class="form-group">
-			    	<label for="background">Background image</label>
-			    	<input type="file" id="background">
-			    	<p class="help-block">Ajouter image de fond d'écran (optionnel)</p>
+			  		<div class="col-xs-6">
+				    	<label for="background">Background image</label>
+				    	<input type="file" id="background">			  			
+			  		</div>
+					<div class="col-xs-6">
+				    	<p class="help-block">Background actuel</p>
+				    	<img src="../{{ background }}">						
+					</div>
 			 	</div>
 
-			 	<div class="form-group">
+			 	<div class="form-group">{{ baseline }}
 			  		<label for="baseline">Baseline</label>
-			  		<textarea class="form-control" rows="3" id="baseline"></textarea>
+			  		<textarea class="form-control" rows="3" id="baseline">{{ baseline }}</textarea>
 			 	</div>
 
 			  	<div class="form-group">
 			  		<label for="placeholder">Placeholder</label>
-			  		<input type="text" class="form-control" placeholder="placeholder" id="placeholder">
+			  		<input type="text" class="form-control" value="{{ placeholder }}" id="placeholder">
 			  	</div>
 
 			  	<div class="form-group">
 			  		<label for="placeholder">Button Value</label>
-			  		<input type="text" class="form-control" placeholder="button value" id="button-value">
+			  		<input type="text" class="form-control" value="{{ button_value }}"  id="button-value">
 			  	</div>
 
 			  	<div class="form-group">
 			    	<label for="email">Email address</label>
-			    	<input type="email" class="form-control" id="email" placeholder="Enter email">
+			    	<input type="email" class="form-control" id="email" value="{{ mail_box }}">
 			    	<p class="help-block">Entrez la boîte mail qui recevera les inscritpions</p>
 			  	</div>
 
 			  	<div class="form-group">
 			  		<label for="help-label">Help Label</label>
-			  		<input type="text" class="form-control" placeholder="placeholder" id="help-label">
+			  		<input type="text" class="form-control" value="{{ help_label }}" id="help-label">
 			  	</div>
 
 			  	<div class="form-group">
 			  		<label for="meta-title">Meta title</label>
-			  		<input type="text" class="form-control" placeholder="placeholder" id="meta-title">
+			  		<input type="text" class="form-control" value="{{ meta_title }}" id="meta-title">
 			  	</div>
 
 			  <div class="checkbox" id="show-link">
 			    	<label>
-			      		<input type="checkbox"> Support the developper showing a link
+			      		<input type="checkbox" checked="{{ show_link }}"> Support the developper showing a link
 			    	</label>
 			  </div>
 			  <button type="submit" class="btn btn-default">Submit</button>
 			</form>
 		</div>
 	</div>
-
-
-
 
 </body>
 
